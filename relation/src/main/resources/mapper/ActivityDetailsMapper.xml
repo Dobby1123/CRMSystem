@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.ActivityDetailsMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.ActivityDetails">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="money" jdbcType="DECIMAL" property="money" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="pic" jdbcType="BLOB" property="pic" />
+        <result column="aid" jdbcType="VARCHAR" property="aid" />
+        <result column="uid" jdbcType="VARCHAR" property="uid" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        money,
+        type,
+        address,
+        pic,
+        aid,
+        uid
+    </sql>
+
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.ActivityDetails" keyProperty="id" useGeneratedKeys="true">
+        insert into activity (
+            money,
+            type,
+            address,
+            pic,
+            aid,
+            uid
+        )values(
+            #{money},
+            #{type},
+            #{address},
+            #{pic,jdbcType=BLOB},
+            #{aid},
+            #{uid}
+        )
+    </insert>
+
+
+</mapper>

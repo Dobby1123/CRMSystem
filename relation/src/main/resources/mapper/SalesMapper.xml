@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.SalesMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.Sales">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="did" jdbcType="VARCHAR" property="did" />
+        <result column="contnt" jdbcType="VARCHAR" property="contnt" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        did,
+        contnt,
+        create_time
+    </sql>
+
+
+    <!--根据ID查询-->
+    <select id="queryById" resultType="com.zzy.relation.entity.Sales" >
+       select
+        s.id,
+        s.did,
+        s.contnt,
+        s.create_time createTime,
+        d.title dtitle,
+        c.name cname
+        from sales s left join deals d on s.did = d.id left join customer c on d.cid = c.id
+        where s.id=#{id}
+    </select>
+
+
+    <select id="queryAllByLimit" resultType="com.zzy.relation.entity.Sales" parameterType="map">
+        select
+        s.id,
+        s.did,
+        s.contnt,
+        s.create_time createTime,
+        d.title dtitle,
+        c.name cname
+        from sales s left join deals d on s.did = d.id left join customer c on d.cid = c.id
+        <where>
+            <if test="id != null and id != '' ">
+                and s.id = #{id}
+            </if>
+            <if test="cname != null and cname != '' ">
+                and c.name like concat('%',#{cname},'%')
+            </if>
+            <if test="did != null and did != '' ">
+                and s.did = #{did}
+            </if>
+            <if test="contnt != null and contnt != '' ">
+                and s.contnt = #{contnt}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and s.create_time = #{createTime}
+            </if>
+        </where>
+        order by s.create_time desc
+    </select>
+
+
+    <select id="queryCondition" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sales
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="did != null and did != '' ">
+                and did = #{did}
+            </if>
+            <if test="contnt != null and contnt != '' ">
+                and contnt = #{contnt}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.Sales" keyProperty="id" useGeneratedKeys="true">
+        insert into sales (
+            did,
+            contnt,
+            create_time
+        )values(
+            #{did},
+            #{contnt},
+            #{createTime}
+        )
+    </insert>
+
+
+    <!--修改-->
+    <update id="update" parameterType="com.zzy.relation.entity.Sales">
+        update sales
+        <set>
+            <if test="did != null and did != '' ">
+                did = #{did},
+            </if>
+            <if test="contnt != null and contnt != '' ">
+                contnt = #{contnt},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--根据id删除-->
+    <delete id="deleteById" >
+        delete from sales where id=#{id}
+    </delete>
+
+
+</mapper>

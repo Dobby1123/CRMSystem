@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.DealsMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.Deals">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="content" jdbcType="VARCHAR" property="content" />
+        <result column="dealtime" jdbcType="VARCHAR" property="dealtime" />
+        <result column="cid" jdbcType="VARCHAR" property="cid" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        title,
+        content,
+        dealtime,
+        cid,
+        create_time
+    </sql>
+
+
+    <!--根据ID查询-->
+    <select id="queryById" resultType="com.zzy.relation.entity.Deals" >
+        select
+        d.id,
+        d.title,
+        d.content,
+        d.dealtime,
+        d.cid,
+        d.create_time createTime,
+        c.name cname
+        from deals d left join customer c on d.cid = c.id
+        where d.id=#{id}
+    </select>
+
+
+    <select id="queryAllByLimit" resultType="com.zzy.relation.entity.Deals" parameterType="map">
+        select
+        d.id,
+        d.title,
+        d.content,
+        d.dealtime,
+        d.cid,
+        d.create_time createTime,
+        c.name cname
+        from deals d left join customer c on d.cid = c.id
+        <where>
+            <if test="id != null and id != '' ">
+                and d.id = #{id}
+            </if>
+            <if test="title != null and title != '' ">
+                and d.title like concat('%',#{title},'%')
+            </if>
+            <if test="cname != null and cname != '' ">
+                and d.title = #{cname}
+            </if>
+            <if test="content != null and content != '' ">
+                and d.content = #{content}
+            </if>
+            <if test="dealtime != null and dealtime != '' ">
+                and d.dealtime = #{dealtime}
+            </if>
+            <if test="cid != null and cid != '' ">
+                and d.cid = #{cid}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and d.create_time = #{createTime}
+            </if>
+        </where>
+        order by d.create_time desc
+    </select>
+
+
+    <select id="queryCondition" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from deals
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="title != null and title != '' ">
+                and title = #{title}
+            </if>
+            <if test="content != null and content != '' ">
+                and content = #{content}
+            </if>
+            <if test="dealtime != null and dealtime != '' ">
+                and dealtime = #{dealtime}
+            </if>
+            <if test="cid != null and cid != '' ">
+                and cid = #{cid}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.Deals" keyProperty="id" useGeneratedKeys="true">
+        insert into deals (
+            title,
+            content,
+            dealtime,
+            cid,
+            create_time
+        )values(
+            #{title},
+            #{content},
+            #{dealtime},
+            #{cid},
+            #{createTime}
+        )
+    </insert>
+
+
+    <!--修改-->
+    <update id="update" parameterType="com.zzy.relation.entity.Deals">
+        update deals
+        <set>
+            <if test="title != null and title != '' ">
+                title = #{title},
+            </if>
+            <if test="content != null and content != '' ">
+                content = #{content},
+            </if>
+            <if test="dealtime != null and dealtime != '' ">
+                dealtime = #{dealtime},
+            </if>
+            <if test="cid != null and cid != '' ">
+                cid = #{cid},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--根据id删除-->
+    <delete id="deleteById" >
+        delete from deals where id=#{id}
+    </delete>
+
+
+</mapper>

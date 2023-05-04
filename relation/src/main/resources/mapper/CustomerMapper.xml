@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.CustomerMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.Customer">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="phone" jdbcType="VARCHAR" property="phone" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="industry" jdbcType="VARCHAR" property="industry" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="aid" jdbcType="VARCHAR" property="aid" />
+        <result column="status" jdbcType="VARCHAR" property="status" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        name,
+        phone,
+        address,
+        industry,
+        type,
+        aid,
+        status,
+        create_time
+    </sql>
+
+
+    <!--根据ID查询-->
+    <select id="queryById" resultType="com.zzy.relation.entity.Customer" >
+        select
+        c.id,
+        c.name,
+        c.phone,
+        c.address,
+        c.industry,
+        c.type,
+        c.aid,
+        c.status,
+        c.create_time createTime,
+        a.title atitle
+        from customer c left join activity a on c.aid = a.id
+        where c.id=#{id}
+    </select>
+
+
+    <select id="queryAllByLimit" resultType="com.zzy.relation.entity.Customer" parameterType="map">
+        select
+        c.id,
+        c.name,
+        c.phone,
+        c.address,
+        c.industry,
+        c.type,
+        c.aid,
+        c.status,
+        c.create_time createTime,
+        a.title atitle
+        from customer c left join activity a on c.aid = a.id
+        <where>
+            <if test="id != null and id != '' ">
+                and c.id = #{id}
+            </if>
+            <if test="name != null and name != '' ">
+                and c.name like concat('%',#{name},'%')
+            </if>
+            <if test="phone != null and phone != '' ">
+                and c.phone = #{phone}
+            </if>
+            <if test="address != null and address != '' ">
+                and c.address = #{address}
+            </if>
+            <if test="industry != null and industry != '' ">
+                and c.industry = #{industry}
+            </if>
+            <if test="type != null and type != '' ">
+                and c.type = #{type}
+            </if>
+            <if test="aid != null and aid != '' ">
+                and c.aid = #{aid}
+            </if>
+            <if test="status != null and status != '' ">
+                and c.status = #{status}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and c.create_time = #{createTime}
+            </if>
+        </where>
+        order by c.create_time desc
+    </select>
+
+
+    <select id="queryCondition" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from customer
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != '' ">
+                and name = #{name}
+            </if>
+            <if test="phone != null and phone != '' ">
+                and phone = #{phone}
+            </if>
+            <if test="address != null and address != '' ">
+                and address = #{address}
+            </if>
+            <if test="industry != null and industry != '' ">
+                and industry = #{industry}
+            </if>
+            <if test="type != null and type != '' ">
+                and type = #{type}
+            </if>
+            <if test="aid != null and aid != '' ">
+                and aid = #{aid}
+            </if>
+            <if test="status != null and status != '' ">
+                and status = #{status}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.Customer" keyProperty="id" useGeneratedKeys="true">
+        insert into customer (
+            name,
+            phone,
+            address,
+            industry,
+            type,
+            aid,
+            status,
+            create_time
+        )values(
+            #{name},
+            #{phone},
+            #{address},
+            #{industry},
+            #{type},
+            #{aid},
+            #{status},
+            #{createTime}
+        )
+    </insert>
+
+
+    <!--修改-->
+    <update id="update" parameterType="com.zzy.relation.entity.Customer">
+        update customer
+        <set>
+            <if test="name != null and name != '' ">
+                name = #{name},
+            </if>
+            <if test="phone != null and phone != '' ">
+                phone = #{phone},
+            </if>
+            <if test="address != null and address != '' ">
+                address = #{address},
+            </if>
+            <if test="industry != null and industry != '' ">
+                industry = #{industry},
+            </if>
+            <if test="type != null and type != '' ">
+                type = #{type},
+            </if>
+            <if test="aid != null and aid != '' ">
+                aid = #{aid},
+            </if>
+            <if test="status != null and status != '' ">
+                status = #{status},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--根据id删除-->
+    <delete id="deleteById" >
+        delete from customer where id=#{id}
+    </delete>
+
+
+</mapper>

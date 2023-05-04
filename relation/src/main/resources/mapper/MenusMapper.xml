@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.MenusMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.Menus">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="icons" jdbcType="VARCHAR" property="icons" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="url" jdbcType="VARCHAR" property="url" />
+        <result column="num" jdbcType="INTEGER" property="num" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        icons,
+        name,
+        url,
+        num,
+        create_time
+    </sql>
+
+
+    <!--根据ID查询-->
+    <select id="queryById" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from menus where id=#{id}
+    </select>
+
+
+    <select id="queryAllByLimit" resultMap="BaseResultMap" parameterType="map">
+        select
+        <include refid="Base_Column_List"/>
+        from menus
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="icons != null and icons != '' ">
+                and icons = #{icons}
+            </if>
+            <if test="name != null and name != '' ">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="url != null and url != '' ">
+                and url = #{url}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by num
+    </select>
+
+
+    <select id="queryCondition" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from menus
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="icons != null and icons != '' ">
+                and icons = #{icons}
+            </if>
+            <if test="name != null and name != '' ">
+                and name = #{name}
+            </if>
+            <if test="url != null and url != '' ">
+                and url = #{url}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by num
+    </select>
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.Menus" keyProperty="id" useGeneratedKeys="true">
+        insert into menus (
+            icons,
+            name,
+            url,
+            num,
+            create_time
+        )values(
+            #{icons},
+            #{name},
+            #{url},
+            #{num},
+            #{createTime}
+        )
+    </insert>
+
+
+    <!--修改-->
+    <update id="update" parameterType="com.zzy.relation.entity.Menus">
+        update menus
+        <set>
+            <if test="icons != null and icons != '' ">
+                icons = #{icons},
+            </if>
+            <if test="name != null and name != '' ">
+                name = #{name},
+            </if>
+            <if test="url != null and url != '' ">
+                url = #{url},
+            </if>
+            <if test="num != null">
+                num = #{num},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--根据id删除-->
+    <delete id="deleteById" >
+        delete from menus where id=#{id}
+    </delete>
+
+
+</mapper>

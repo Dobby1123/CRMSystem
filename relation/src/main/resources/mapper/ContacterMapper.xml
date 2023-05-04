@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzy.relation.mapper.ContacterMapper" >
+
+    <resultMap id="BaseResultMap" type="com.zzy.relation.entity.Contacter">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="phone" jdbcType="VARCHAR" property="phone" />
+        <result column="position" jdbcType="VARCHAR" property="position" />
+        <result column="depart" jdbcType="VARCHAR" property="depart" />
+        <result column="wx" jdbcType="VARCHAR" property="wx" />
+        <result column="qq" jdbcType="VARCHAR" property="qq" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="cid" jdbcType="VARCHAR" property="cid" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        name,
+        phone,
+        position,
+        depart,
+        wx,
+        qq,
+        email,
+        cid,
+        create_time
+    </sql>
+
+
+    <!--根据ID查询-->
+    <select id="queryById" resultType="com.zzy.relation.entity.Contacter" >
+        select
+        c.id,
+        c.name,
+        c.phone,
+        c.position,
+        c.depart,
+        c.wx,
+        c.qq,
+        c.email,
+        c.cid,
+        c.create_time createTime,
+        ct.name ctname
+        from contacter c left join customer ct on c.cid = ct.id
+        where c.id=#{id}
+    </select>
+
+
+    <select id="queryAllByLimit" resultType="com.zzy.relation.entity.Contacter" parameterType="map">
+        select
+        c.id,
+        c.name,
+        c.phone,
+        c.position,
+        c.depart,
+        c.wx,
+        c.qq,
+        c.email,
+        c.cid,
+        c.create_time createTime,
+        ct.name ctname
+        from contacter c left join customer ct on c.cid = ct.id
+        <where>
+            <if test="id != null and id != '' ">
+                and c.id = #{id}
+            </if>
+            <if test="name != null and name != '' ">
+                and c.name like concat('%',#{name},'%')
+            </if>
+            <if test="phone != null and phone != '' ">
+                and c.phone = #{phone}
+            </if>
+            <if test="position != null and position != '' ">
+                and c.position = #{position}
+            </if>
+            <if test="depart != null and depart != '' ">
+                and c.depart = #{depart}
+            </if>
+            <if test="wx != null and wx != '' ">
+                and c.wx = #{wx}
+            </if>
+            <if test="qq != null and qq != '' ">
+                and c.qq = #{qq}
+            </if>
+            <if test="email != null and email != '' ">
+                and c.email = #{email}
+            </if>
+            <if test="cid != null and cid != '' ">
+                and c.cid = #{cid}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and c.create_time = #{createTime}
+            </if>
+        </where>
+        order by c.create_time desc
+    </select>
+
+
+    <select id="queryCondition" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from contacter
+        <where>
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != '' ">
+                and name = #{name}
+            </if>
+            <if test="phone != null and phone != '' ">
+                and phone = #{phone}
+            </if>
+            <if test="position != null and position != '' ">
+                and position = #{position}
+            </if>
+            <if test="depart != null and depart != '' ">
+                and depart = #{depart}
+            </if>
+            <if test="wx != null and wx != '' ">
+                and wx = #{wx}
+            </if>
+            <if test="qq != null and qq != '' ">
+                and qq = #{qq}
+            </if>
+            <if test="email != null and email != '' ">
+                and email = #{email}
+            </if>
+            <if test="cid != null and cid != '' ">
+                and cid = #{cid}
+            </if>
+            <if test="createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+
+    <!--添加-->
+    <insert id="insert" parameterType="com.zzy.relation.entity.Contacter" keyProperty="id" useGeneratedKeys="true">
+        insert into contacter (
+            name,
+            phone,
+            position,
+            depart,
+            wx,
+            qq,
+            email,
+            cid,
+            create_time
+        )values(
+            #{name},
+            #{phone},
+            #{position},
+            #{depart},
+            #{wx},
+            #{qq},
+            #{email},
+            #{cid},
+            #{createTime}
+        )
+    </insert>
+
+
+    <!--修改-->
+    <update id="update" parameterType="com.zzy.relation.entity.Contacter">
+        update contacter
+        <set>
+            <if test="name != null and name != '' ">
+                name = #{name},
+            </if>
+            <if test="phone != null and phone != '' ">
+                phone = #{phone},
+            </if>
+            <if test="position != null and position != '' ">
+                position = #{position},
+            </if>
+            <if test="depart != null and depart != '' ">
+                depart = #{depart},
+            </if>
+            <if test="wx != null and wx != '' ">
+                wx = #{wx},
+            </if>
+            <if test="qq != null and qq != '' ">
+                qq = #{qq},
+            </if>
+            <if test="email != null and email != '' ">
+                email = #{email},
+            </if>
+            <if test="cid != null and cid != '' ">
+                cid = #{cid},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--根据id删除-->
+    <delete id="deleteById" >
+        delete from contacter where id=#{id}
+    </delete>
+
+
+</mapper>
