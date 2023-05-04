@@ -89,6 +89,11 @@ export default new Router({
                     meta: {title: '我的信息'}
                 },
                 {
+                    path: '/admin/Test',
+                    component: () => import('../components/page/test.vue'),
+                    meta: {title: '测试页面'}
+                },
+                {
                     path: '/admin/*',
                     redirect: '/404'
                 }

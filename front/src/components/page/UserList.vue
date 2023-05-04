@@ -19,7 +19,7 @@
                 <el-table-column prop="password" label="密码" align="center"></el-table-column>
                 <el-table-column prop="realname" label="姓名" align="center"></el-table-column>
                 <el-table-column prop="sex" label="性别" align="center"></el-table-column>
-                <el-table-column prop="age" label="年龄" align="center"></el-table-column>
+                <!-- <el-table-column prop="age" label="年龄" align="center"></el-table-column> -->
                 <el-table-column prop="dname" label="部门" align="center"></el-table-column>
                 <el-table-column prop="createTime" label="创建时间" align="center"></el-table-column>
                 <el-table-column label="操作" align="center" width="200" >

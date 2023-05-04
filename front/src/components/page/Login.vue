@@ -20,7 +20,7 @@
                  <el-form-item label="人员类型" label-width="70px">
                      <el-select v-model="param.role" placeholder="请选择人员类型">
                         <el-option label="管理员" value="01"></el-option>
-                        <el-option label="用户" value="02"></el-option>
+                        <el-option label="员工" value="02"></el-option>
                     </el-select>
                 </el-form-item>
                 <div class="login-btn">

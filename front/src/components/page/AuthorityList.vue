@@ -193,7 +193,7 @@
                 this.getDepartment();
                 this.mids = [];
                 this.$axios.post('/api/menus/selectByCondition',{}).then(res => {
-                  debugger
+                //   debugger
                   this.menus = res.data;
                   this.eform = JSON.parse(JSON.stringify(row));
                   this.eform.did = Number(this.eform.did);

@@ -24,31 +24,36 @@
 
 <table>
     <tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\1.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\2.png"/></td>
+        <td><img src=./img/1.png/></td>
+        <td><img src="./img/2.png"/></td>
     </tr>
     <tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\3.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\4.png"/></td>
+        <td><img src="./img/3.jpg"/></td>
+        <td><img src="./img/3.png"/></td>
     </tr>
     <tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\5.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\6.png"/></td>
+        <td><img src="./img/4.png"/></td>
+        <td><img src="./img/5.png"/></td>
     </tr>
 	<tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\7.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\8.png"/></td>
+        <td><img src="./img/6.png"/></td>
+        <td><img src="./img/7.png"/></td>
     </tr>	 
     <tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\9.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\10.png"/></td>
+        <td><img src="./img/8.png"/></td>
+        <td><img src="./img/9.png"/></td>
     </tr>
 	<tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\11.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\12.png"/></td>
+        <td><img src="./img/10.png"/></td>
+        <td><img src="./img/11.png"/></td>
     </tr>
 	<tr>
-        <td><img src="D:\GraduationProject\CRM\Code\img\13.png"/></td>
-        <td><img src="D:\GraduationProject\CRM\Code\img\14.png"/></td>
+        <td><img src="./img/12.png"/></td>
+        <td><img src="./img/13.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="./img/14.png"/></td>
+        <td><img src="./img/15.jpg"/></td>
     </tr>
 </table>
+
