@@ -24,8 +24,8 @@
 
 <table>
     <tr>
-        <td><img src=./img/1.png/></td>
-        <td><img src="./img/2.png"/></td>
+        <td><img src=img/1.png/></td>
+        <td><img src="img/2.png"/></td>
     </tr>
     <tr>
         <td><img src="./img/3.jpg"/></td>
