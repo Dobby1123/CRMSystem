@@ -5,194 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3f9cfee-e1ce-4168-8e91-3b392ed43114" name="变更" comment="修改首页，市场活动详情，readme">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/components/page/test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/ActivityDetailsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/ActivityDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/ActivityDetailsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/ActivityDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/ActivityDetailsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/源码.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/ActivityList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/ActivityList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/AuthorityList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/AuthorityList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/CustomerList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/CustomerList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/DealsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/DealsList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/page/UserList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/page/UserList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation" beforeDir="false" afterPath="$PROJECT_DIR$/relation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_alibaba_druid_1_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_buffer_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_codec_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_common_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_handler_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_resolver_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_netty_netty_transport_4_1_65_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_48.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_48.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_48.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_crazycake_shiro_redis_2_4_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_aop_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_beans_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_context_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_core_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_expression_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_tx_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_web_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__redis_clients_jedis_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__tk_mybatis_mapper_3_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/AuthorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/AuthorityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/ContacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/ContacterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/DealsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/DealsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/MenusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/MenusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/SalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/SalesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/StatisticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Contacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Contacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Deals.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Deals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Menus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/ParamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/ParamEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/ParamQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/ParamQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/ActivityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/AuthorityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/AuthorityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/ContacterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/ContacterMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/DealsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/DealsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/MenusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/MenusMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/SalesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/SalesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/AuthorityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/ContacterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/ContacterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/DealsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/DealsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/MenusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/MenusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/SalesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/SalesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/util/MyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/util/MyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/util/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/util/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/java/com/mty/relation/util/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/java/com/zzy/relation/util/TimeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/ActivityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/AuthorityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/AuthorityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/ContacterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/ContacterMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/DealsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/DealsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/MenusMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/MenusMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/SalesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/SalesMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relation/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/relation/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +46,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -244,8 +58,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683207093293</updated>
-      <workItem from="1683207104309" duration="618000" />
+      <workItem from="1683207104309" duration="1838000" />
     </task>
+    <task id="LOCAL-00001" summary="修改首页，市场活动详情，readme">
+      <created>1683208039361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683208039361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +85,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/relation" />
+    </ignored-roots>
     <MESSAGE value="修改首页，市场活动详情，readme" />
     <option name="LAST_COMMIT_MESSAGE" value="修改首页，市场活动详情，readme" />
   </component>
