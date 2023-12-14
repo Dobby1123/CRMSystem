@@ -26,47 +26,63 @@
 ### 功能分析
 客户关系管理通过对传统的客户管理体系进行资源整合,从客户发展与维护、流失客户管理的角度,优化企业的客户服务体系,提高客户对企业的满意度和忠诚度,创造更大的经济效益与社会效益。该基于SSM的客户关系管理系统的主要目的就是帮助公司进行客户信息的管理，其目的就是在留在老客户的前提下发展潜在的新用户。首先是由我们市场部的员工发布活动由此来发现潜在用户，再由销售部进行跟踪潜在用户将其发展成为用户，与之产生交易，而售后服务部则负责跟踪用户的反馈信息。故在此系统当中我们主要是有两个主要角色，分别为用户和管理员。<br>
 （1）管理员：管理员的主要模块分为登陆注册、部门管理、用户管理、菜单管理、部门权限管理、管理员信息管理、我的信息、潜在客户管理、客户管理、市场活动管理、市场活动详情管理、交易管理、联系人管理、售后服务管理这14个模块，如图所示：<br>
+<img src="./img/1.png"/>
 （2）用户：用户主要分为市场部员工、销售部员工以及售后服务部员工，若是市场部员工登陆系统则只能看到首页，市场活动管理模块、市场活动详情管理模块、潜在客户模块、联系人模块以及我的信息模块，若是销售部的员工登陆系统则可以看到首页、潜在客户管理模块、客户管理模块、交易管理模块、联系人模块以及我的信息模块，若是售后服务部的员工登陆系统则只能看到首页、售后服务管理模块、交易模块以及我的信息模块，如图所示：
-
+<img src="./img/2.png"/>
 ### 数据流程分析
 该基于SSM的crm客户关系管理系统顶层数据流图，如图所示：
+<img src="./img/3.png"/>
 
 ### 业务流程分析
 该基于SSM的crm客户关系管理系统的业务流程图，如图所示：
+<img src="./img/4.png"/>
+
+
+## 系统的结构设计
+本系统基于SSM开发，在软件设计方面遵循了通用的结构设计原则，例如“高内聚低耦合”，并且在项目结构上controller层负责接收用户的请求，并且调用service层，service层负责将controller层的数据进行处理并调用dao层，dao层主要是用于数据库的操作，mapper层用于实现SQL语句和Java方法的绑定。除此之外本系统选用SSM架构，为整个系统带来了低耦合、容易维护等优良特性。本系统分为两个大模块，分别为员工和管理员，员工和管理员下面又有不同的功能模块，具体细节如图所示:
+<img src="./img/5.png"/>
 ## 演示图
 
 <table>
     <tr>
-        <td><img src=img/1.png/></td>
-        <td><img src="img/2.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="./img/3.jpg"/></td>
-        <td><img src="./img/3.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="./img/4.png"/></td>
-        <td><img src="./img/5.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="./img/6.png"/></td>
+        <td><img src=./img/6.png/></td>
         <td><img src="./img/7.png"/></td>
-    </tr>	 
+    </tr>
     <tr>
         <td><img src="./img/8.png"/></td>
         <td><img src="./img/9.png"/></td>
     </tr>
-	<tr>
+    <tr>
         <td><img src="./img/10.png"/></td>
         <td><img src="./img/11.png"/></td>
     </tr>
 	<tr>
         <td><img src="./img/12.png"/></td>
         <td><img src="./img/13.png"/></td>
-    </tr>
+    </tr>	 
     <tr>
         <td><img src="./img/14.png"/></td>
-        <td><img src="./img/15.jpg"/></td>
+        <td><img src="./img/15.png"/></td>
+    </tr>
+	<tr>
+        <td><img src="./img/16.png"/></td>
+        <td><img src="./img/17.png"/></td>
+    </tr>
+	<tr>
+        <td><img src="./img/18.png"/></td>
+        <td><img src="./img/19.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="./img/20.png"/></td>
+        <td><img src="./img/21.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="./img/22.png"/></td>
+        <td><img src="./img/23.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="./img/24.png"/></td>
+        <td><img src="./img/25.png"/></td>
     </tr>
 </table>
 
